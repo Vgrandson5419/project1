@@ -7,7 +7,7 @@ document.write('Your car brand is ' +cars[0]);
 
 const object = {
     Filmname: 'Mission Impossible ',
-    maincharacter:['Tom Cruise', 'Rebecca Ferguson', 'Simon Pegg'],
+    maincharacter:['Tom Cruise', 'Rebecca Ferguson', 'Simon Pegg'], 
     dog: download.jpg , 
     bestCar: {
         brand :'BMW',
@@ -20,3 +20,6 @@ document.write('Dog that was taking action all the time of film  :' + object.dog
 const isCheked = true,
       isClosed = false;
       console.log(isCheked && isClosed);
+
+const isSeen = true ,
+      isNotseen = false;

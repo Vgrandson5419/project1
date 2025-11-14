@@ -98,7 +98,7 @@ document.write('5'- 3)
 let incr = 10;
     decr = 10 ;
 
-document.write(++incr); /// Prefix increment - Прирост      
+document.write(++incr); // Prefix increment - Прирост      
 document.write(decr--) // Postfix decrement - Уменьшение
 document.write(--decr); // Прирост уменьшения 
 

@@ -57,7 +57,7 @@ console.log(apple &&pineapple);
 
 let apple = 3;
 let pineapple = 1;
-const cola = 0;
+const cola1 = 0;
 if (apple === 3 || cola === 1 || pineapple){
     console.log('We all are blessed ');
 }
@@ -70,14 +70,67 @@ if (apple === 3 || cola === 1 || pineapple){
 // && and operator is stopped when there is false 
 
 
-let junReport = 0; 
-    febReport = 0;
-    marchReport = 0;
-    aprilReport = 0;
+let junReport = 1; 
+    febReport = 1;
+    marchReport = 1;
+    aprilReport = 1;
 
-  if (junReport && febReport && marchReport && aprilReport){
+  if (junReport && febReport && marchReport && aprilReport ){
     console.log('All four month reports are sent')
-    }else if (junReport && febReport || marchReport && aprilReport) {
+    }else if (junReport || febReport || marchReport || aprilReport) {
     console.log('Some reports are not send yet')
-    }else {}
+    }else {
     console.log('No reports are send yet')
+    }
+
+    console.log(5 === 5 && 3>1 ||5  );
+
+let hamburger;
+const fries = NaN;
+const cola = 0;
+const nuggets = 2;
+
+
+if (hamburger && cola || fries === 3 && nuggets) {
+   console.log('Done!')
+}
+console.log( NaN || 2 || undefined );
+
+
+// lesson 21 
+let num21 = 21;
+ while (num21 <= 31){
+    console.log(num21);
+    num21++;   
+}
+
+do {
+    console.log(num21)
+    num21--;
+    if (num21 > 31){
+        break;
+    }
+}
+        while(num21 >= 1)
+
+        for (let i = 1; i< 8 ; i++ ){
+            if (i ==6 ){
+                break;
+            }
+            console.log(i)
+        }
+// lesson 22 loop in loop
+ for (let i = 1 ; i<3 ; i++){
+    console.log(i);
+    for (let j = 0 ; j<3 ; j ++){
+        console.log(j);
+    }
+ }
+
+
+
+   for(let i = 1 ; i<8 ; i+2){
+    
+    console.log(i);
+    
+ }

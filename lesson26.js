@@ -17,7 +17,7 @@ function promotion (result){
 const res = convert(500, UsdCurr) ;
 promotion(res);
 function test (){
-    for (i = 1 ; i ){
+    for (i = 1 ; i < UsdCurr ; i ++){
         console.log(i); 
         if (i===3){
             return 
@@ -67,9 +67,11 @@ function makeFigure(){
     const lines = 11;
     let result = "";
         for (let i = 1; i <= lines ; i ++ ){
-            result+= 1  
-        }console.log(result )
-
+            result+= "*"
+            if(result >1 ){
+                result+= "*"
+            }    console.log(result)// console .log before closing condition for
+        }
 }
 makeFigure();
 
@@ -141,10 +143,42 @@ function MakingaFigure (){
  let  result = "";
     for (let i = 1; i <= lines; i++ ){
         result += "*"
-        if (result <5 ){
-            result += "\n"
-        }
-    }console.log(result)
+        if (result >1 ){
+            result += "*"
+        }console.log(result)
+    }
 
 }
 MakingaFigure();
+
+
+
+        const massive = [1 , 2, 3 ,4 ,5 ]; 
+
+        massive.forEach(function(item, i, massive) {
+                console.log(`${i} : ${item} inside massive `
+        })
+
+        /*massive[10] = 9; 
+
+        console.log(massive.length )*/
+
+       /* massive.pop()
+        massive.push(5)
+
+        console.log(massive)*/
+
+
+        for (let i = 0; i < massive.length; i++){
+            console.log(i)
+        }
+
+        for (let value of massive){
+            console.log(value)
+        } 
+
+
+    const str = prompt('', '')
+         
+    const products =  str.split("-");
+    console.log(products )

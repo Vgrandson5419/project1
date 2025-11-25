@@ -139,24 +139,49 @@ function oneMoreDistructionOfObject(){
 oneMoreDistructionOfObject();
 
 function MakingaFigure (){
- const lines = 5;
- let  result = "";
-    for (let i = 1; i <= lines; i++ ){
-        result += "*"
-        if (result >1 ){
-            result += "*"
-        }console.log(result)
-    }
+const lines = 5;
+let result = '';
 
+for (let i = 0; i < lines ;i++ ){
+    for(let j = 0; j < lines - i ; j ++){
+        result += " "
+}
+    for (let j = 0; j < 2 * i +1; j ++ ){
+        result += "*"
+    }
+    result += "\n"
+}
+console.log(result)
 }
 MakingaFigure();
+
+function MakingOppositefigure (){
+    const lines = 5;
+    let result = "";
+
+    for (let i = lines - 1 ; i >= 0 ; i--){
+        for (let j = 0 ; j <lines - i ; j++)
+            result += " "
+    
+    for (let j = 0 ; j < 2 * i +1 ; j++){
+        result += "*"
+    }result += "\n"
+    }
+   console.log(result)
+}
+MakingOppositefigure();
 
 
 
         const massive = [1 , 2, 3 ,4 ,5 ]; 
 
+        massive.sort();
+        console.log(massive )
+
+
+
         massive.forEach(function(item, i, massive) {
-                console.log(`${i} : ${item} inside massive `
+                console.log(`${i} : ${item} )inside massive `
         })
 
         /*massive[10] = 9; 
@@ -168,7 +193,7 @@ MakingaFigure();
 
         console.log(massive)*/
 
-
+function lesson31 (){ 
         for (let i = 0; i < massive.length; i++){
             console.log(i)
         }
@@ -181,4 +206,175 @@ MakingaFigure();
     const str = prompt('', '')
          
     const products =  str.split("-");
-    console.log(products )
+    products.sort ();
+    console.log(products.join(',  ') )
+
+    function compare (a,b){
+        return a -b ;
+    }
+}
+
+
+const obj = {
+    a: 5 , 
+    b: 1 , 
+}
+
+const copy = obj; 
+
+copy.a = 10 ;
+console.log(copy);
+
+
+function copy (mainObj){
+    let Obj = {};
+
+    let key  ;
+    for (key in mainObj ){
+        objCopy[key ] = mainObj[key]
+    }    
+    return Obj.copy
+}
+
+
+const Numbers  =   {
+    a:2, 
+    b:5,
+    c :{
+
+    }
+}
+
+
+const add = {
+
+    d:33,
+    e:39,
+
+}
+
+console.log(Object,assign(Numbers,add))
+
+
+const video = ['Youtube', 'Twitch', 'Kick'] ,
+    blogs = ['wordpress','livejournal ', 'bloger'],
+    games =['cs go ', 'fortnite']
+    internet = [...video, ...blogs ,'vk', 'facebook', ...games ];// 
+
+    console.log(internet)
+
+    function  log(a,b,c){
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    }
+
+    const num = [2,5,7,];
+   log(...num)
+
+   const array = ['a', 'b'];
+
+
+   const newarray = [...array]
+
+   const q = {
+    one:1,
+    two:2,
+   }
+
+
+
+
+function makingFigure() {
+const lines =7;
+let result = "";
+
+
+    for (let i = 0; i <= lines ; i ++){
+        for(let j = 0; j < lines - i ; j++){
+            result += " "
+        }
+    for (let j = 0 ; j < 2*i  + 1 ; j++){
+        result += "*"
+    }result += "\n"
+        }
+        console.log(result)
+}
+makingFigure();
+
+
+function makingFigureonemoretime() {
+    const lines = 7; 
+    let result = "";
+
+    for(let i = lines - 1 ; i >= 0 ; i --){
+        for (let j = 0; j < lines - i ; j++){
+            result += " "
+        }
+    for (let j = 0; j < 2 * i +1 ; j ++ ){
+    result += "*"
+    }result += "\n"
+        }
+        console.log(result)
+
+}
+makingFigureonemoretime();
+
+
+function ex1 (Name){
+    const sayHello = "Привет,"
+    const result = sayHello + Name
+    console.log(result)
+    return result; 
+}
+ 
+const Name = "Антон ";
+
+function exerciseThree (base, times ) {
+
+    
+    for(let i = base ; i < base *times  ; i++  ){
+            base += base       
+        
+    }console.log(base)
+}
+
+
+exerciseThree (base, times);
+
+
+// Место для первой задачи
+function sayHello(name) {
+
+    let sayHello = 'Привет' ;
+    const result = sayHello + name ;
+    return result ;
+}
+ const name = ", Alex"
+
+// Место для второй задачи
+function returnNeighboringNumbers(intnumber) {
+    
+    const massive = [intnumber - 1 , intnumber,intnumber +1 ]
+    
+    return massive ;
+
+}
+
+const intnumber = 4;
+
+// Место для третьей задачи
+function getMathResult(base,times ) {
+    
+    const t = typeof(times)
+    for (let i = base ; i < base * times; i ++){
+        base += base  
+    }
+    if ( t === isNotaNumber() || t <= 0  ){
+        return base ;
+    }
+
+}
+
+
+getMathResult (3,5);

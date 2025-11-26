@@ -104,3 +104,30 @@ document.write(--decr); // Прирост уменьшения
 
 
 console.log(5%2);
+
+// Top navigation toggle behavior
+(function () {
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    if (!toggle || !menu) return;
+
+    toggle.addEventListener('click', () => {
+        const shown = menu.classList.toggle('show');
+        toggle.setAttribute('aria-expanded', shown ? 'true' : 'false');
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && menu.classList.contains('show')) {
+            menu.classList.remove('show');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.focus();
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!menu.contains(e.target) && !toggle.contains(e.target) && menu.classList.contains('show')) {
+            menu.classList.remove('show');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+})();

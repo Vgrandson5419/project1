@@ -1,12 +1,12 @@
 'use strict '
 function askUser(){
-const userAnswers {
-numberOffilms = prompt ("Сколко фильмов вы уже посмотрели ?",""),
-     lwf = prompt("One of last whatched films "),
-     genre = prompt ("What was the genre of the film ?") ,
-     rating = prompt ("Who much you wil give it ?"), 
-     actors = prompt('What actor played the best ?'),
-     ratings = prompt ("How much would you give him ? "),
+const userAnswers = {
+numberOffilms :prompt ("Сколко фильмов вы уже посмотрели ?",""),
+     lwf : prompt("One of last whatched films "),
+     genre : prompt ("What was the genre of the film ?") ,
+     rating : prompt ("Who much you wil give it ?"), 
+     actors : prompt('What actor played the best ?'),
+     ratings : prompt ("How much would you give him ? "),
 }
      if (userAnswers != "" || userAnswers != null || userAnswers.length > 50 ){
       console.log("done")
@@ -15,7 +15,7 @@ console.log("Error")
      }
     }
 
-
+ 
     askUser();
 
 const personalMovieDb = {
@@ -62,3 +62,14 @@ if ( personalMovieDb > 0 && personalMovieDb.count < 10 ){
     {
     alert ("Enter proper number of films")
 }
+
+
+
+function getMathresult (base ,times){
+
+
+
+}
+
+
+getMathresult();

@@ -181,11 +181,9 @@ MakingOppositefigure();
 
 
         massive.forEach(function(item, i, massive) {
-                console.log(`${i} : ${item} )inside massive `
-        })
-
+                console.log(`${i} : ${item} )inside massive `)}
+                
         /*massive[10] = 9; 
-
         console.log(massive.length )*/
 
        /* massive.pop()
@@ -208,6 +206,8 @@ function lesson31 (){
     const products =  str.split("-");
     products.sort ();
     console.log(products.join(',  ') )
+}
+lesson31 (); 
 
     function compare (a,b){
         return a -b ;
@@ -365,16 +365,15 @@ const intnumber = 4;
 
 // Место для третьей задачи
 function getMathResult(base,times ) {
-    
-    const t = typeof(times)
-    for (let i = base ; i < base * times; i ++){
-        base += base  
-    }
-    if ( t === isNotaNumber() || t <= 0  ){
-        return base ;
-    }
 
+    if (typeof(times) !== "number" || times<= 0 ){
+    return base ;
 }
+let result = "";
 
-
-getMathResult (3,5);
+for (let i = 1; i <= times; i++ ){
+    result += base * i + '---'
+    console.log(result)
+}
+}
+getMathResult (3,5);           

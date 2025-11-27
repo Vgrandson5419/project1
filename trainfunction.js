@@ -126,6 +126,8 @@ DOM () ;
 // Events and handlers lesson 41 Javascript course 
 
 
+function  geteventandhandler(){
+
 
 const btn = document.querySelectorAll('nav-menu');
 
@@ -143,4 +145,120 @@ container.onclick = function (){
     console.log('You clicked paragraph')
 };
 
+container.addEventListener('click', deleteElement) => {
+    console.log(container)
+};
 
+}
+
+geteventandhandler();
+
+
+console.log(document.body.parentNode) // Get in console HTML body 
+console.log(document.body.childNodes)
+console.log(document.body.firstChild)// Get first 
+console.log(document.body.lastChild)
+
+console.log(document.querySelector("#container")).parentNode
+
+console.log(document.querySelector('data-cointaier'))
+
+for (let node of document.body.Childnodes){
+    if (node.Name === '#text' ){
+        continue;
+    }
+    console.log(node);
+}
+
+pow(2, 4) // 2 in power of 4
+
+function pow(power ,innum){
+    let result = 1
+    for (let i = 0 ; i<= innum ;i++ ){
+
+    }
+}
+pow(2,4);
+
+// Events on mobile application 
+
+//touchstart 
+//touchmove 
+//touchend 
+//touchenter
+//touchend 
+//touchleave
+//touchcancel - when touchpoint is not registered on screen
+
+window.addEventListener('DOMContentLoaded', () => {
+    const box = document.querySelector('.container');
+
+    box.addEventListener('touchstart', (e) => {
+        e.preventDefualt();
+
+        console.log('start')
+    }
+);    box.addEventListener('touchmove', (e) => {
+e.preventDefualt();
+console.log('moved ') 
+    }
+);
+
+    box.addEventListener('toucheleft', (e) => {
+        e.preventDefualt();
+        console.log("end ")
+    })
+})
+
+//Targettuoches 
+
+//Async , dynamic scripts, defer 
+
+const getp = document.querySelector('#top-nav')
+
+
+getp.onclick = function (){
+    console.log('You clicked body ')
+};
+
+function localscript (src){
+
+const script = document.createElement('script');
+script.src = src;
+document.body.append(script);
+script.async = false ;
+document.body.append(script);
+
+}
+
+loadScript("js/lesson26.js");
+laodScript("js/train.js");
+
+
+
+
+const getbtns = document.querySelectorAll('button'),
+        wrapper = document.querySelector('red');
+
+        wrapper.addEventList('click', (event))
+
+    console.log(getbtns[0].classList.add('red'));
+    console.log(getbtns[1].classList.remove('red'));
+
+    if (getbtns[1].classList.contains('blue')){
+        console.log('red')
+    }
+
+
+
+
+
+
+buttons[0].addEventListener('click' , () =>{
+ if (!buttons[].classList.contains('red')){
+    btns [1].classList.add('red')
+ } else {
+    btns[1].classList.remove('blue')
+ }
+});
+console.log(buttons[1].classList('red'));
